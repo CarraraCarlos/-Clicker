@@ -1,0 +1,10 @@
+git config --global user.name carraracarlos
+git config --global user.email carloscarrara2008@gmail.com
+
+npm i
+
+Executar o projeto:
+npx expo start --localhost --android
+
+Biblioteca para rodar na web:
+npx expo install react-dom react-native-web @expo/metro-runtime
