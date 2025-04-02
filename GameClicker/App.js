@@ -1,17 +1,17 @@
 import { useState } from 'react';
-import { StyleSheet, Text, View, SafeAreaView, TextInput } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, TextInput, Image } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import Ionicons from "@expo/vector-icons/Ionicons";
+import Ionicons from "@expo/vector-icons/Ionicons";''
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.ContainerCoockie}>
-      <TextInput
+            <TextInput
             style={styles.input}
             placeholder='Nome da sua confeitaria!'
-            keyboardType='Text'
-          ></TextInput>
+            keyboardType='Text'></TextInput>
+        <Image source={require('img/cookie.jpeg')}></Image>
+        <View style={styles.ContainerCookie}>
       </View>
     </SafeAreaView>
   );
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
 
   input: {
     fontSize: 20,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
 });
 
